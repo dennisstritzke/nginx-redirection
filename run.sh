@@ -2,7 +2,7 @@
 
 /bin/cat <<EOM > /etc/nginx/conf.d/default.conf
 server {
-    listen       80;
+    listen       8080;
     rewrite ^/(.*)$ $REDIRECTION_TARGET redirect;
 }
 EOM
